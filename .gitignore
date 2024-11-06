@@ -14,3 +14,5 @@ answers.json
 data*
 *virtual
 data_folder/config.yaml
+data_folder/plain_text_resume.yaml
+data_folder/secrets.yaml
