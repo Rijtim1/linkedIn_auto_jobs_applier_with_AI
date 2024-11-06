@@ -8,13 +8,13 @@
 
 # LinkedIn_AIHawk
 
-#### 🤖🔍 Your AI-powered job search assistant. Automate applications, get personalized recommendations, and land your dream job faster.
+#### 🤖🔍 Your AI-powered job search assistant. Automate applications, get personalized recommendations, and land your dream job faster
 
 </div>
 <br />
 
 <!-- Message Clarity -->
-## 🚀 Join the AIHawk Community 🚀 
+## 🚀 Join the AIHawk Community 🚀
 
 Connect with like-minded individuals and get the most out of AIHawk.
 
@@ -28,11 +28,9 @@ Connect with like-minded individuals and get the most out of AIHawk.
 
 <!-- Strong Call to Action -->
 ### Join Now 👇
+
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white
 )](https://t.me/AIhawkCommunity)
-
-
-
 
 <!-- 🚀 **Join Our Telegram Community!** 🚀
 
@@ -51,12 +49,12 @@ Join our **Telegram community** for:
 3. [Installation](#installation)
 4. [Configuration](#configuration)
 5. [Usage](#usage)
-6. [Documentation](#Documentation)
+6. [Documentation](#documentation)
 7. [Troubleshooting](#troubleshooting)
 8. [Conclusion](#conclusion)
 9. [Contributors](#contributors)
 10. [License](#license)
-11. [Disclaimer](#Disclaimer)
+11. [Disclaimer](#disclaimer)
 
 ## Introduction
 
@@ -105,8 +103,9 @@ LinkedIn_AIHawk steps in as a game-changing solution to these challenges. It's n
 
 ## Installation
 
-**Please watch this video to set up your LinkedIn_AIHawk: [How to set up LinkedIn_AIHawk](https://youtu.be/gdW9wogHEUM) - https://youtu.be/gdW9wogHEUM**
+**Please watch this video to set up your LinkedIn_AIHawk: [How to set up LinkedIn_AIHawk](https://youtu.be/gdW9wogHEUM) - <https://youtu.be/gdW9wogHEUM>**
 0. **Confirmed succesfull runs OSs & Python**: Python 3.10, 3.11.9(64b), 3.12.5(64b) . Windows 10, Ubuntu 22
+
 1. **Download and Install Python:**
 
    Ensure you have the last Python version  installed. If not, download and install it from Python's official website. For detailed instructions, refer to the tutorials:
@@ -119,12 +118,14 @@ LinkedIn_AIHawk steps in as a game-changing solution to these challenges. It's n
    - Download and install the latest version of Google Chrome in its default location from the [official website](https://www.google.com/chrome).
 
 3. **Clone the repository:**
+
    ```bash
    git clone https://github.com/feder-cr/LinkedIn_AIHawk_automatic_job_application
    cd LinkedIn_AIHawk_automatic_job_application
    ```
 
 4. **Activate virtual environment:**
+
    ```bash
    python3 -m venv virtual
    ```
@@ -134,6 +135,7 @@ LinkedIn_AIHawk steps in as a game-changing solution to these challenges. It's n
    ```
 
 5. **Install the required packages:**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -150,10 +152,8 @@ This file contains sensitive information. Never share or commit this file to ver
   - Replace with your LinkedIn account password
 - `openai_api_key: [Your OpenAI API key]`
   - Replace with your OpenAI API key for GPT integration
-  - To obtain an API key, follow the tutorial at: https://medium.com/@lorenzozar/how-to-get-your-own-openai-api-key-f4d44e60c327
+  - To obtain an API key, follow the tutorial at: <https://medium.com/@lorenzozar/how-to-get-your-own-openai-api-key-f4d44e60c327>
   - Note: You need to add credit to your OpenAI account to use the API. You can add credit by visiting the [OpenAI billing dashboard](https://platform.openai.com/account/billing).
-
-
 
 ### 2. config.yaml
 
@@ -171,10 +171,10 @@ This file defines your job search parameters and bot behavior. Each section cont
 - `date:`
   - Choose one time range for job postings by setting it to `true`, others to `false`
 
-
 - `positions:`
   - List job titles you're interested in, one per line
   - Example:
+
     ```yaml
     positions:
       - Software Developer
@@ -184,6 +184,7 @@ This file defines your job search parameters and bot behavior. Each section cont
 - `locations:`
   - List locations you want to search in, one per line
   - Example:
+
     ```yaml
     locations:
       - Italy
@@ -197,6 +198,7 @@ This file defines your job search parameters and bot behavior. Each section cont
 - `companyBlacklist:`
   - List companies you want to exclude from your search, one per line
   - Example:
+
     ```yaml
     companyBlacklist:
       - Company X
@@ -206,6 +208,7 @@ This file defines your job search parameters and bot behavior. Each section cont
 - `titleBlacklist:`
   - List keywords in job titles you want to avoid, one per line
   - Example:
+
     ```yaml
     titleBlacklist:
       - Sales
@@ -232,6 +235,7 @@ Each section has specific fields to fill out:
     - **github**: URL to your GitHub profile, if applicable.
     - **linkedin**: URL to your LinkedIn profile, if applicable.
   - Example
+
   ```yaml
   personal_information:
     name: "Jane"
@@ -258,6 +262,7 @@ Each section has specific fields to fill out:
     - **exam**: A list of courses or subjects taken along with their respective grades.
 
   - Example:
+
   ```yaml
   education_details:
     - education_level: "Bachelor's Degree"
@@ -285,6 +290,7 @@ Each section has specific fields to fill out:
     - **skills_acquired**: Skills or expertise gained through this role.
 
   - Example:
+
   ```yaml
   experience_details:
     - position: "Software Developer"
@@ -308,7 +314,8 @@ Each section has specific fields to fill out:
     - **description**: A brief summary of what the project involves or its purpose.
     - **link**: URL to the project, if available (e.g., GitHub repository, website).
 
-   - Example:
+  - Example:
+
     ```yaml
     projects:
       - name: "Weather App"
@@ -325,6 +332,7 @@ Each section has specific fields to fill out:
     - **description**: A brief explanation of the achievement and its significance.
 
   - Example:
+
   ```yaml
   achievements:
     - name: "Employee of the Month"
@@ -335,10 +343,11 @@ Each section has specific fields to fill out:
 
 - `certifications:`
   - Include any professional certifications you have earned.
-      - name: "PMP"  
+    - name: "PMP"  
       description: "Certification for project management professionals, issued by the Project Management Institute (PMI)"
 
   - Example:
+
   ```yaml
   certifications:
     - "Certified Scrum Master"
@@ -351,6 +360,7 @@ Each section has specific fields to fill out:
     - **proficiency**: Your level of proficiency (e.g., Native, Fluent, Intermediate).
 
   - Example:
+
   ```yaml
   languages:
     - language: "English"
@@ -365,6 +375,7 @@ Each section has specific fields to fill out:
     - **interest**: A list of interests or hobbies.
 
   - Example:
+
   ```yaml
   interests:
     - "Machine Learning"
@@ -379,6 +390,7 @@ Each section has specific fields to fill out:
     - **notice_period**: The amount of time required before you can start a new role (e.g., "2 weeks", "1 month").
 
   - Example:
+
   ```yaml
   availability:
     notice_period: "2 weeks"
@@ -389,6 +401,7 @@ Each section has specific fields to fill out:
     - **salary_range_usd**: The salary range you are expecting, expressed in USD.
 
   - Example:
+
   ```yaml
   salary_expectations:
     salary_range_usd: "80000 - 100000"
@@ -403,6 +416,7 @@ Each section has specific fields to fill out:
     - **ethnicity**: Your ethnicity.
 
   - Example:
+
   ```yaml
   self_identification:
     gender: "Female"
@@ -424,6 +438,7 @@ Each section has specific fields to fill out:
     - **requires_eu_sponsorship**: Whether you require sponsorship to work in the EU (Yes/No).
 
   - Example:
+
      ```yaml
      legal_authorization:
        eu_work_authorization: "Yes"
@@ -446,6 +461,7 @@ Each section has specific fields to fill out:
     - **willing_to_undergo_background_checks**: Whether you are willing to undergo background checks (Yes/No).
 
   - Example:
+
   ```yaml
   work_preferences:
     remote_work: "Yes"
@@ -478,11 +494,11 @@ Using this folder as a guide can be particularly helpful for:
 2. Seeing examples of valid data for each field
 3. Having a reference point while filling out your personal files
 
-
 ## Usage
+
 0. **LinkedIn language**
    To ensure the bot works, your LinkedIn language must be set to English.
-   
+
 2. **Data Folder:**
    Ensure that your data_folder contains the following files:
    - `secrets.yaml`
@@ -495,27 +511,30 @@ Using this folder as a guide can be particularly helpful for:
 
 - **Dynamic Resume Generation:**
   If you don't use the `--resume` option, the bot will automatically generate a unique resume for each application. This feature uses the information from your `plain_text_resume.yaml` file and tailors it to each specific job application, potentially increasing your chances of success by customizing your resume for each position.
+
    ```bash
    python main.py
    ```
+
 - **Using a Specific Resume:**
   If you want to use a specific PDF resume for all applications, place your resume PDF in the `data_folder` directory and run the bot with the `--resume` option:
+
   ```bash
   python main.py --resume /path/to/your/resume.pdf
   ```
 
 ## Documentation
 
-TODO ):
+TODO:
 
 ## Troubleshooting
 
-- **Carefully read logs and output :** Most of the errors are verbosely reflected just watch the output and try to find the root couse. 
+- **Carefully read logs and output :** Most of the errors are verbosely reflected just watch the output and try to find the root couse.
 - **If nothing works by unknown reason:**  Use tested OS. Reboot and/or update OS.  Use new clean venv. Try update Python to the tested version.  
 - **ChromeDriver Issues:** Ensure ChromeDriver is compatible with your installed Chrome version.
 - **Missing Files:** Verify that all necessary files are present in the data folder.
-- **Invalid YAML:** Check your YAML files for syntax errors . Try to use external YAML validators e.g. https://www.yamllint.com/
-- **OpenAI endpoint isues**: Try to check possible limits\blocking at their side 
+- **Invalid YAML:** Check your YAML files for syntax errors . Try to use external YAML validators e.g. <https://www.yamllint.com/>
+- **OpenAI endpoint isues**: Try to check possible limits\blocking at their side
   
 If you encounter any issues, you can open an issue on [GitHub](https://github.com/feder-cr/linkedIn_auto_jobs_applier_with_AI/issues).
   Please add valuable details to the subject and to the description. If you need new feature then please reflect this.  
@@ -531,10 +550,10 @@ LinkedIn_AIHawk provides a significant advantage in the modern job market by aut
 
 LinkedIn_AIHawk is still in beta, and your feedback, suggestions, and contributions are highly valued. Feel free to open issues, suggest enhancements, or submit pull requests to help improve the project. Let's work together to make LinkedIn_AIHawk an even more powerful tool for job seekers worldwide.
 
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
+
 LinkedIn_AIHawk is developed for educational purposes only. The creator does not assume any responsibility for its use. Users should ensure they comply with LinkedIn's terms of service, any applicable laws and regulations, and ethical considerations when using this tool. The use of automated tools for job applications may have implications on user accounts, and caution is advised.
